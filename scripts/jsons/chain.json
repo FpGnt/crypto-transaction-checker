@@ -1,0 +1,5 @@
+
+[
+    {"name": "bsc20", "chain": "https://bsc-dataseed1.binance.org"},
+    {"name": "erc20", "chain": "https://mainnet.infura.io/v3/eaf821c607ec465eb846e2d785bdc6fa"}
+]

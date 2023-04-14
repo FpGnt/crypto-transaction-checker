@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Self UI</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.1/web3.min.js"></script>
+        <script>
+          /* To connect using MetaMask */
+          async function connect() {
+           if (window.ethereum) {
+           
+            await window.ethereum.request({ method: "eth_requestAccounts" });
+            window.web3 = new Web3(window.ethereum);
+            
+           } else {
+            console.log("No wallet");
+           }
+          }
+          </script>
+        <style>
+
+        </style>
+    </head>
+<body>
+    <h1>Self courses</h1>
+
+    <input type="button" value="Connect Wallet" onclick="connect();">
+
+    <form method="POST" action="/fucktard">
+        <input type="text" id='address' name="address" placeholder="address">
+        <input type="text" id='amount' name="amount" placeholder="amount">
+        <select name="crypto" id="crypto">
+            <optgroup label="Crypto">
+              <option value="BNB">BNB</option>
+              <option value="LYO">LYO</option>
+              <option value="LYO">UNI</option>
+            </optgroup>
+          </select>
+          <select name="chain" id="chain">
+            <optgroup label="Chain">
+              <option value="erc20">ERC-20</option>
+              <option value="bsc20">BSC-20</option>
+            </optgroup>
+          </select>
+          <input id="btn" type="submit" name="Submit" onclick="" />
+      </form>
+    
+      
+
+</body>
+
+</html>
